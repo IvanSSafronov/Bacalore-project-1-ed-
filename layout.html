@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты: макет</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <header>
+        <a href="index.html">Главная</a>
+    </header>
+
+    <aside>
+        <h2>Фильтры</h2>
+        <p>
+            <label for="country">Страна:</label>
+            <select id="country" name="country">
+                <option value="">Все</option>
+                <option value="russia">Россия</option>
+                <option value="italy">Италия</option>
+                <option value="japan">Япония</option>
+            </select>
+        </p>
+        <p>
+            <label for="category">Категория:</label>
+            <select id="category" name="category">
+                <option value="">Все</option>
+                <option value="soup">Супы</option>
+                <option value="dessert">Десерты</option>
+            </select>
+        </p>
+        <p>
+            <label for="time">Время (мин):</label>
+            <input type="number" id="time" name="time" min="1">
+        </p>
+        <p>
+            <label for="difficulty">Сложность:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="">Все</option>
+                <option value="easy">Легко</option>
+                <option value="medium">Средне</option>
+                <option value="hard">Сложно</option>
+            </select>
+        </p>
+    </aside>
+
+    <main>
+        <h1>Рецепты</h1>
+        <div class="cards">
+            <article class="card"><h3>Рецепт 1</h3></article>
+            <article class="card"><h3>Рецепт 2</h3></article>
+            <article class="card"><h3>Рецепт 3</h3></article>
+            <article class="card"><h3>Рецепт 4</h3></article>
+            <article class="card"><h3>Рецепт 5</h3></article>
+        </div>
+    </main>
+
+    <footer class="footer-grid">
+        <p>© 2026 Рецепты</p>
+        <a href="index.html">Главная</a>
+        <a href="mailto:ivan@example.com">Контакты</a>
+    </footer>
+</body>
+</html>
