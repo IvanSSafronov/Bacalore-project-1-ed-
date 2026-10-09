@@ -1,0 +1,36 @@
+/* Log-in form */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form {
+    width: 100%;
+    padding: 2rem;
+    max-width: 400px;
+    border: 1px solid #C76D4A;
+    border-radius: 8px;
+    background-color: #A3B18A;
+}
+
+.login-form h1 {
+    color: #F5E9D3;
+}
+
+.login-form button{
+    background-color: #243B53;
+    color: #F5E9D3;
+}
+.login-form button:hover{
+    background-color: #C76D4A;
+    color: #F5E9D3;
+}

@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рецепты: макет</title>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="page">
-    <header>
+    <header class="header-grid">
+        <nav>
+            <h1 id="top">Рецепты</h1>
+        <a href="recipe.html">Рецепты</a>
+        <div class="search-container">
+            
+        <input type="text" id="search" name="search" placeholder="Поиск:" >
+        <button type="submit">Найти</button>
+    </div>
         <a href="index.html">Главная</a>
+</nav>
     </header>
 
     <aside>
@@ -54,6 +63,7 @@
             <article class="card"><h3>Рецепт 3</h3></article>
             <article class="card"><h3>Рецепт 4</h3></article>
             <article class="card"><h3>Рецепт 5</h3></article>
+            
         </div>
     </main>
 
