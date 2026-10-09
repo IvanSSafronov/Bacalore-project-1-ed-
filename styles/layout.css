@@ -1,36 +1,56 @@
-/* Log-in form */
-.login-page {
+/* Layout page */
+.header-grid{
+    
+    input[type="text"]{
+        width: 200px;
+        padding: 0.5rem;
+        border: 1px solid #C76D4A;
+        border-radius: 4px;
+    }
+    button{
+        background-color: #243B53;
+        color: #F5E9D3;
+    }
+}
+.search-container{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+.page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header  header"
+        "sidebar content"
+        "footer  footer";
+    gap: 1rem;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-.login-page main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.page header { grid-area: header; }
+.page aside  { grid-area: sidebar; padding: 1rem; }
+.page main   { grid-area: content; max-width: none; margin: 0; }
+.page footer { grid-area: footer; }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.cards .card {
+    margin: 0;
+}
+
+.cards .card:first-child {
+    grid-column: span 2;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    width: 100%;
-}
-
-.login-form {
-    width: 100%;
-    padding: 2rem;
-    max-width: 400px;
-    border: 1px solid #C76D4A;
-    border-radius: 8px;
-    background-color: #A3B18A;
-}
-
-.login-form h1 {
-    color: #F5E9D3;
-}
-
-.login-form button{
-    background-color: #243B53;
-    color: #F5E9D3;
-}
-.login-form button:hover{
-    background-color: #C76D4A;
-    color: #F5E9D3;
+    text-align: center;
 }
