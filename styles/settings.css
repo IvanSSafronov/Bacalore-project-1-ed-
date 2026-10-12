@@ -1,0 +1,184 @@
+/*profile pic*/
+.settings #avatar{
+    background-color: #F5E9D3;
+    border-radius: 50%;
+}
+.settings{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/*cross btn*/
+.exit{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.exit:hover{
+    background: rgba(163, 177, 138, 0.2);
+    transform: none;
+}
+.exit:focus-visible {
+    outline: 2px solid #A3B18A;
+    outline-offset: 3px;
+}
+#exit{
+    display: block;
+    width: 24px;
+    height: 24px;
+
+}
+
+.change-btn, .log-out{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#setting, #log-out{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+/*footer*/
+.settings-page {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-page > main {
+    width: 100%;
+    flex: 1;
+}
+
+.settings-page > footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    height: auto;
+    flex-wrap: nowrap;
+    gap: 12px;
+    min-height: 100px;
+    padding: 24px 16px;
+    
+}
+
+.settings-page .settings-form {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 24px;
+}
+
+.settings-form label {
+    display: block;
+    margin-top: 16px;
+    text-align: left;
+}
+
+.settings-hint {
+    font-size: 0.875rem;
+}
+
+.settings-page .settings-form fieldset {
+    min-width: 0;
+    margin-bottom: 24px;
+    padding: 16px;
+    border: 1px solid #A3B18A;
+    border-radius: 8px;
+}
+
+.settings-page .settings-form legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+.settings-page input[type="file"] {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    margin: 8px 0;
+    font: inherit;
+}
+
+.settings-page input[type="file"]::file-selector-button {
+    padding: 8px 12px;
+    margin-right: 8px;
+    background: #A3B18A;
+    color: #243B53;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.settings-page .settings-cancel {
+    display: inline-block;
+    padding: 10px 0;
+    margin-bottom: 16px;
+    color: #F5E9D3;
+    text-underline-offset: 4px;
+}
+
+.settings-page .settings-cancel:focus-visible,
+.settings-page input[type="file"]:focus-visible {
+    outline: 2px solid #A3B18A;
+    outline-offset: 3px;
+}
+
+.settings-page .change-btn {
+    background-color: #243B53;
+    color: #F5E9D3;
+    min-height: 44px;
+}
+
+.settings-page .change-btn:hover {
+    background-color: #1A2C40;
+}
+
+.settings-page .change-btn img {
+    filter: none;
+}
+
+.settings-page > footer > button {
+    flex: 0 1 220px;
+    min-width: 0;
+    min-height: 52px;
+    padding: 8px 12px;
+    font: inherit;
+    line-height: 1.25;
+    
+}
+
+.settings-page > footer > button img {
+    flex-shrink: 0;
+}
+
+.settings-page > footer > .change-btn {
+    border-color: #F5E9D3;
+}
+
+.settings-page > footer > button:hover {
+    transform: none;
+}
+
+.settings-page .log-out {
+    min-height: 44px;
+    border: 1px solid currentColor;
+}
+
+.settings-page .change-btn:focus-visible,
+.settings-page .avatar-link:focus-visible {
+    outline: 2px solid #C76D4A;
+    outline-offset: 3px;
+}

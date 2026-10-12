@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки профиля</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="settings-page">
+    <main>
+        <a class="exit" href="profile.html" aria-label="Вернуться в профиль"><img src="./img/exit.svg" alt="" id="exit"></a>
+        <section class="settings" aria-labelledby="settings-title">
+            <h1 id="settings-title">Настройки профиля</h1>
+            <a href="profile.html" class="avatar-link" aria-label="Открыть профиль"><img src="img/bird-svgrepo-com.svg" alt="Аватар" width="80" height="80" id="avatar"></a>
+            <h2 class="username">User_Name</h2>
+            <form id="settings-form" class="settings-form">
+                <fieldset>
+                <legend>Данные профиля</legend>
+                <label for="avatar-file">Изменить фото</label>
+                <input type="file" id="avatar-file" name="avatar" accept="image/png,image/jpeg,image/webp" aria-describedby="avatar-hint">
+                <p id="avatar-hint" class="settings-hint">Выберите фото в формате JPG, PNG или WebP.</p>
+                <label for="username">Имя пользователя</label>
+                <input type="text" id="username" name="username" value="User_Name" autocomplete="username" required>
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                </fieldset>
+                <fieldset>
+                <legend>Смена пароля</legend>
+                <p class="settings-hint">Заполняйте этот блок, только если хотите изменить пароль.</p>
+                <label for="current-password">Текущий пароль</label>
+                <input type="password" id="current-password" name="current-password" autocomplete="current-password">
+                <label for="password">Новый пароль</label>
+                <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" aria-describedby="password-hint">
+                <p id="password-hint" class="settings-hint">Не менее 8 символов. Оставьте пустым, чтобы сохранить текущий пароль.</p>
+                <label for="confirm-password">Повторите новый пароль</label>
+                <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" minlength="8">
+                </fieldset>
+                <a class="settings-cancel" href="profile.html">Отмена</a>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <button class="log-out" type="button">Выйти <img src="./img/log-out.svg" alt="" id="log-out"></button>
+        <button class="change-btn" type="button">Сохранить изменения <img src="./img/settings.svg" alt="" id="setting"></button>
+    </footer>
+</body>
+</html>
