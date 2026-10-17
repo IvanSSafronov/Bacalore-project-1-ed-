@@ -1,81 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="fonts" href="FjallaOne-Regular.ttf">
-
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="fonts" href="FjallaOne-Regular.ttf" />
+  </head>
+  <body>
     <header>
-        <nav class="sidebar on">
-            <div class="profile">
-            <a href="profile.html" class="avatar-link"><img src="img/bird-svgrepo-com.svg" alt="picture_default" width="40" height="40" id="avatar"></a>
-            <a href="profile.html">Настройки профиля</a>
+      <nav class="sidebar on">
+        <div class="profile">
+          <a href="profile.html" class="avatar-link"
+            ><img
+              src="img/bird-svgrepo-com.svg"
+              alt="picture_default"
+              width="40"
+              height="40"
+              id="avatar"
+          /></a>
+          <a href="profile.html">Настройки профиля</a>
         </div>
-        <hr>
+        <hr />
         <a href="recipe.html">Рецепты</a>
-            <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN</a>
-            <a href="login.html">Log-in</a>
-            <a href="layout.html">Layout</a>
-        </nav>
-        <div class="nav-container">
+        <a
+          href="https://developer.mozilla.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Email</a
+        >
+        <a href="login.html">Log-in</a>
+        <a href="layout.html">Layout</a>
+      </nav>
+      <div class="nav-container">
         <nav>
-            <button><img src="img/list.svg" alt="list" width="30" height="30"></button>
-            <h1 id="top">Рецепты</h1>
-            <a href="profile.html">Home</a>
-            <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">Email</a>
-            <a href="tel:+4200000000">Number</a>
+          <button>
+            <img src="img/list.svg" alt="list" width="30" height="30" />
+          </button>
+          <h1 id="top">Рецепты</h1>
+          <a href="profile.html">Home</a>
+          <a
+            href="https://developer.mozilla.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Email</a
+          >
+          <a href="tel:+4200000000">Number</a>
         </nav>
-        </div>
+      </div>
     </header>
     <main>
-        <h2>Рецепты которые я уподобал</h2>
-    <div class="cards">
+      <h2>Рецепты которые я уподобал</h2>
+      <div class="cards-rec">
         <article class="card">
-            <h3>Отрада Сварога</h3>
-            <figure class="img-abt">
-                <img src="img/smith.jpg" alt="Кузнец у наковальни" width="300" height="200">
-            </figure>
-            <span class="badge">Новое</span>
+          <h3>Отрада Сварога</h3>
+          <figure class="img-abt">
+            <img
+              src="img/smith.jpg"
+              alt="Кузнец у наковальни"
+              class="rec-img"
+            />
+          </figure>
+          <div class="about-dish">
+          <h4>Recepie</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+            error inventore iste provident nisi ullam? Odio dolorem quisquam
+            asperiores voluptates minus officiis consequatur ea quae qui
+            voluptatem. Sunt, error labore? Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Illo assumenda dicta cumque. Illum,
+            sit! Repellendus animi neque, ipsam vero delectus voluptatum ut
+            eligendi sed obcaecati debitis eum odit sit blanditiis.
+          </p>
+          <h4>Rate <img src="./img/scales-justice-lawyer-svgrepo-com.svg" alt="rate" class="rate"></h4>
+          <h4>Feed-back <img src="./img/dialogue-conversation-bubble-svgrepo-com.svg" alt="chat" class="feedback"></h4></div>
+          <span class="badge">Новое</span>
         </article>
 
         <article class="card">
-            <h3>Отрада Сварога</h3>
-            <figure class="img-abt">
-                <img src="img/smith.jpg" alt="Кузнец у наковальни" width="300" height="200">
-            </figure>
-            <span class="badge">Новое</span>
+          <h3>Отрада Сварога</h3>
+          <figure class="img-abt">
+            <img
+              src="img/smith.jpg"
+              alt="Кузнец у наковальни"
+              class="rec-img"
+            />
+          </figure>
+          <span class="badge">Новое</span>
         </article>
         <article class="card">
-            <h3>Отрада Сварога</h3>
-            <figure class="img-abt">
-                <img src="img/smith.jpg" alt="Кузнец у наковальни" width="300" height="200">
-            </figure>
-            <span class="badge">Новое</span>
+          <h3>Отрада Сварога</h3>
+          <figure class="img-abt">
+            <img
+              src="img/smith.jpg"
+              alt="Кузнец у наковальни"
+              class="rec-img"
+            />
+          </figure>
+          <span class="badge">Новое</span>
         </article>
         <article class="card">
-            <h3>Отрада Сварога</h3>
-            <figure class="img-abt">
-                <img src="img/smith.jpg" alt="Кузнец у наковальни" width="300" height="200">
-            </figure>
-            <span class="badge">Новое</span>
+          <h3>Отрада Сварога</h3>
+          <figure class="img-abt">
+            <img
+              src="img/smith.jpg"
+              alt="Кузнец у наковальни"
+              class="rec-img"
+            />
+          </figure>
+          <span class="badge">Новое</span>
         </article>
         <article class="card">
-            <h3>Отрада Сварога</h3>
-            <figure class="img-abt">
-                <img src="img/smith.jpg" alt="Кузнец у наковальни" width="300" height="200">
-            </figure>
-            <span class="badge">Новое</span>
+          <h3>Отрада Сварога</h3>
+          <figure class="img-abt">
+            <img
+              src="img/smith.jpg"
+              alt="Кузнец у наковальни"
+              class="rec-img"
+            />
+          </figure>
+          <span class="badge">Новое</span>
         </article>
-    </div>
-
+      </div>
     </main>
     <footer>
-        <p>© 2024 Иван</p>
-    <a href="#top" id="top-link">up</a>
+      <p>© 2024 Иван</p>
+      <a href="#top" id="top-link">up</a>
     </footer>
-</body>
+  </body>
 </html>

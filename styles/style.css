@@ -14,6 +14,7 @@
 @import url('./login.css');
 @import url('./header.css');
 @import url('./settings.css');
+@import url('./recipe.css');
 /* Media Queries to 768px */
 @media (max-width: 768px) {
     .page {
@@ -25,11 +26,7 @@
             "content"
             "footer";
     }
-    .cards{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+    
     nav,footer{
         background-color: #A3B18A;
     color: #243B53;
