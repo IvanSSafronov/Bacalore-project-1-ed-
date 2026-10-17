@@ -15,40 +15,4 @@
 @import url('./header.css');
 @import url('./settings.css');
 @import url('./recipe.css');
-/* Media Queries to 768px */
-@media (max-width: 768px) {
-    .page {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas:
-            "header"
-            "sidebar"
-            "content"
-            "footer";
-    }
-    
-    nav,footer{
-        background-color: #A3B18A;
-    color: #243B53;
-        align-items: center;
-        padding: 0 16px 0 16px;
-        text-align: center;
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    justify-content:space-between;
-    }
-    nav a {
-        display:none;
-    }
-    nav button{
-        display:block;
-        background-color: #A3B18A;
-        color: #243B53;
-        border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-}
+@import url('./responsive.css');

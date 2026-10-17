@@ -7,7 +7,7 @@
     <link rel="fonts" href="FjallaOne-Regular.ttf">
     <title>Document</title>
 </head>
-<body>
+<body class="add-recipe-page">
     <h1>Добавить рецепт</h1>
     <main>
     
@@ -32,6 +32,7 @@
         <input type="radio" id="hard" name="difficult" value="hard" required> Сложный
 
         <label for="category">Категория:</label>
+        <div class="table-scroll" role="region" aria-label="Пищевая ценность" tabindex="0">
         <table>
     <caption>Пищевая ценность</caption>
     <thead>
@@ -54,6 +55,7 @@
         </tr>
     </tbody>
 </table>
+        </div>
 
         <br><br><label for="describe">Описание:</label> <br><br>
         <textarea id="describe" name="describe"></textarea><br><br>
